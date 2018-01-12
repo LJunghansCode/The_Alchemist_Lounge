@@ -2,16 +2,19 @@
   margin: auto;
   font-family: Header;
   font-size: 3vw;
+  z-index: 900;
   text-align: center;
 }
 .aboutUsVideo video{
   width: 75%;
+  box-shadow: 5px 2px 2px rgba(98, 155, 123, .9);
   margin: 0 auto;
 }
 .aboutUsText{
   margin: auto;
   text-align: center;
   width: 50vw;
+  z-index: 900;
 }
 
 .aboutUs{
@@ -37,9 +40,16 @@
 @keyframes leavetwo {
   to { transform: translateX(-70vw)}
 }
+@keyframes come-in-three {
+  to { transform: translateX(4vw); }
+}
+@keyframes leave-three{
+  to { transform: translateX(-70vw)}
+}
 .aboutmodule{
   width: 30vw;
   height: 40vh;
+  z-index: 400;
   background-image: url('../assets/air.png');
   background-position: center;
   background-size: contain;
@@ -47,19 +57,33 @@
   /*background: grey;*/
   visibility: hidden;
   position: absolute;
-  opacity: .4;
-  margin:50vh auto;
+  opacity: .6;
+  margin:51vh auto;
+}
+.aboutmodule3{
+  width: 50vw;
+  height: 40vh;
+  z-index: 200;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background:  rgb(67,67,65);
+  visibility: hidden;
+  position: absolute;
+  opacity: .6;
+  margin:51vh auto;
 }
 .aboutmodule2{
-  width: 90vw;
-  height: 90vh;
+  width: 70vw;
+  height: 70vh;
+  z-index: 300;
   background: rgba(98, 155, 123, 1);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
   visibility: hidden;
-  opacity: .4;
+  opacity: .8;
   margin: 10vh auto;
 }
 .come-in-about{
@@ -79,4 +103,13 @@
 .leave-about2{
   transform: translateX(0vw);
   animation: leavetwo 1s ease backwards;
+}
+.come-in-about3{
+  visibility: visible;
+  transform: translateX(-100vw);
+  animation: come-in-three 5s ease forwards;
+}
+.leave-about3{
+  transform: translateX(0vw);
+  animation: leave-three 1s ease backwards;
 }

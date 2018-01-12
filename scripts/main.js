@@ -32,8 +32,10 @@ var win = $(window);
 var allMods = $(".module");
 var aboutModule = $(".aboutmodule")
 var aboutModule2 = $(".aboutmodule2")
+var aboutModule3 = $(".aboutmodule3")
 var bioModule = $(".biomodule")
 var bioModule2 = $(".biomodule2")
+var bioModule3 = $(".biomodule3")
 
 
 // Already visible modules
@@ -65,6 +67,16 @@ win.scroll(function(event) {
       el.addClass("leave-bio2");
     }
   })
+  bioModule3.each(function(i,el){
+    var el = $(el);
+    if(el.visible(true)){
+      el.addClass("come-in-bio3");
+      el.removeClass("leave-bio3");
+    }else {
+      el.removeClass("come-in-bio3");
+      el.addClass("leave-bio3");
+    }
+  })
   aboutModule2.each(function(i,el){
     var el = $(el);
     if(el.visible(true)){
@@ -73,6 +85,16 @@ win.scroll(function(event) {
     }else {
       el.removeClass("come-in-about2");
       el.addClass("leave-about2");
+    }
+  })
+  aboutModule3.each(function(i,el){
+    var el = $(el);
+    if(el.visible(true)){
+      el.addClass("come-in-about3");
+      el.removeClass("leave-about3");
+    }else {
+      el.removeClass("come-in-about3");
+      el.addClass("leave-about3");
     }
   })
   aboutModule.each(function(i,el){

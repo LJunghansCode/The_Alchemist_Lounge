@@ -71,9 +71,16 @@
 @keyframes leave-bio-two {
   to { transform: translateX(-10vw)}
 }
+@keyframes come-in-bio-three {
+  to { transform: translateX(59vw); }
+}
+@keyframes leave-bio-three {
+  to { transform: translateX(-0vw)}
+}
 .biomodule{
   width: 40vw;
   height: 40vh;
+  z-index: 950;
   background-image: url('../assets/fire.png');
   background-position: center;
   background-size: contain;
@@ -81,20 +88,34 @@
   /*background: grey;*/
   visibility: hidden;
   position: absolute;
-  opacity: .4;
+  opacity: .6;
   margin: 27vh auto;
 }
 .biomodule2{
-  width: 50vw;
-  height: 90vh;
-  background: rgba(67, 67, 65, 1);
+  width: 51vw;
+  height: 80vh;
+  z-index: 300;
+  background: rgba(98, 155, 123, 1);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   /*background: grey;*/
   visibility: hidden;
   position: absolute;
-  opacity: .4;
+  opacity: .8;
+  margin: 10vh auto;
+}
+.biomodule3{
+  width: 81vw;
+  height: 40vh;
+  z-index: 300;
+  background: rgb(67,67,65);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  visibility: hidden;
+  position: absolute;
+  opacity: .6;
   margin: 10vh auto;
 }
 .come-in-bio{
@@ -114,4 +135,18 @@
 .leave-bio2{
   transform: translateX(0vw);
   animation: leave-bio-two 1s ease backwards;
+}
+.come-in-bio3{
+  visibility: visible;
+  transform: translateX(100vw);
+  animation: come-in-bio-three 4s ease forwards;
+}
+.leave-bio3{
+  transform: translateX(0vw);
+  animation: leave-bio-three 1s ease backwards;
+}
+.bioTitle{
+  text-align: center;
+  font-family: Header;
+  font-size: 3vw;
 }

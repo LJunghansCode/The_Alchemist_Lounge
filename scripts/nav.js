@@ -26,7 +26,6 @@ jQuery(document).ready(function ($) {
     }
 });
 const scrollTo = (idOfSection) => {
-    console.log(idOfSection)
     var element = $(`.${idOfSection}`)
     $('html,body').animate({scrollTop: element.offset().top})
     $('.stickyNavContainer').addClass('is-visible');
