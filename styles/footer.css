@@ -1,0 +1,8 @@
+.footer{
+  background-color: rgb(216,214,215); 
+  height: 30vh;
+}
+.socialList{
+  display: flex;
+  flex-flow: column;
+}

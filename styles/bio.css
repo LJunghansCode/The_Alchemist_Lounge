@@ -1,0 +1,117 @@
+.bio{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.biopic{
+  height: 30vh;
+  padding-bottom: 1vh;
+}
+.loBioSection{
+  display: flex;
+  order: 1;
+  margin-bottom: 20vh;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.sethBioSection{
+  display: flex;
+  order: 2;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+@media all and (min-width: 850px) {
+  .bio{
+    width: 100%;
+    flex-flow: row;
+  }
+  .sethBioSection > img {
+      order: 2;
+      margin-top: 5vh;
+      z-index: 900;
+  }
+  .loBioSection > img {
+    z-index: 900;
+    margin-bottom: 5vh;
+  }
+  .loBioSection, .sethBioSection{
+    margin: 0;
+  }
+  .biopic{
+    padding: 0;
+  }
+  .biotext{
+    width: 65%;
+  }
+}
+@media all and (min-width: 630px) {
+  /*.loBioSection > img {
+      order: 2
+  }*/
+}
+.biotext{
+  /*width: 50%;*/
+  /*margin: 8vh auto;*/
+  z-index: 1000;
+  text-align: center;
+}
+/*MODULE SLIDE IN*/
+@keyframes come-in-bio {
+  to { transform: translateX(29vw); }
+}
+@keyframes leave-bio {
+  to { transform: translateX(-29vw)}
+}
+@keyframes come-in-bio-two {
+  to { transform: translateX(-2vw); }
+}
+@keyframes leave-bio-two {
+  to { transform: translateX(-10vw)}
+}
+.biomodule{
+  width: 40vw;
+  height: 40vh;
+  background-image: url('../assets/fire.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /*background: grey;*/
+  visibility: hidden;
+  position: absolute;
+  opacity: .4;
+  margin: 27vh auto;
+}
+.biomodule2{
+  width: 50vw;
+  height: 90vh;
+  background: rgba(67, 67, 65, 1);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /*background: grey;*/
+  visibility: hidden;
+  position: absolute;
+  opacity: .4;
+  margin: 10vh auto;
+}
+.come-in-bio{
+  visibility: visible;
+  transform: translateX(-100vw);
+  animation: come-in-bio 4s ease forwards;
+}
+.leave-bio{
+  transform: translateX(0vw);
+  animation: leave-bio 1s ease backwards;
+}
+.come-in-bio2{
+  visibility: visible;
+  transform: translateX(-50vw);
+  animation: come-in-bio-two 4s ease forwards;
+}
+.leave-bio2{
+  transform: translateX(0vw);
+  animation: leave-bio-two 1s ease backwards;
+}
