@@ -37,7 +37,9 @@ var bioModule = $(".biomodule")
 var bioModule2 = $(".biomodule2")
 var bioModule3 = $(".biomodule3")
 
-
+var Min = 1170;
+    //primary navigation slide-in effect
+if ($(window).width() > Min) {
 // Already visible modules
 allMods.each(function(i, el) {
   var el = $(el);
@@ -108,3 +110,4 @@ win.scroll(function(event) {
     }
   })
 });
+}

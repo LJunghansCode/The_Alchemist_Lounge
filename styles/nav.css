@@ -1,19 +1,7 @@
-@media screen and (min-height: 700px){
+@media only screen and (min-width: 500px){
   .navbar-fixed {
     position: fixed; }
 
-  .navContainer {
-    text-align: center;
-    margin: 0 auto;
-    width: 98%;
-  }
-  .navList li{
-    display: inline-flex;
-    flex: row;
-    font-family: Header;
-    font-size: 2vw;
-    margin: 0 1vw;
-  }
 span {
   position: relative;
   display: block;
@@ -82,7 +70,21 @@ span:hover:after {
     opacity: 1; } 
 
 
-.navlogo{
-  height: 5vh;
+
 }
-}
+ /* FOR MOBILE */
+  .navlogo{
+    height: 5vh;
+  }
+  .navContainer {
+    text-align: center;
+    margin: 0 auto;
+    width: 98%;
+  }
+  .navList li{
+    display: inline-flex;
+    flex: row;
+    font-family: Header;
+    font-size: 2vw;
+    margin: 0 1vw;
+  }

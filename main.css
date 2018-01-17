@@ -14,21 +14,16 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+
 body {
 	line-height: 1;
 }
 p{
   font-family: BodyMain;
-  font-size: 2vh;
+  font-size: 4vw;
 }
 ol, ul {
 	list-style: none;
@@ -45,16 +40,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-body{
-  width: 100vw;
-}
 nav{
   margin-bottom: 5vh;
   margin-top: 1vh;
 }
 section{
   height: 100vh;
-  /*background-color: grey;*/
   margin-bottom: 10vh;
 }
 .topNav{

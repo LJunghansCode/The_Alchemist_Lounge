@@ -1,7 +1,7 @@
 .aboutUsVideo{
   margin: auto;
   font-family: Header;
-  font-size: 3vw;
+  font-size: 6vw;
   z-index: 900;
   text-align: center;
 }
@@ -15,6 +15,7 @@
   text-align: center;
   width: 50vw;
   z-index: 900;
+  padding-top: 50%; 
 }
 
 .aboutUs{
@@ -112,4 +113,17 @@
 .leave-about3{
   transform: translateX(0vw);
   animation: leave-three 1s ease backwards;
+}
+@media all and (min-width:600px){
+
+}
+@media all and (max-width: 850px) {
+    .aboutUs{
+     background-image: url('./../assets/fire.png');
+     background-size: 50%;
+     background-position: center;
+     background-position-y: 56%;
+     background-repeat: no-repeat;
+     z-index: 0;
+  }
 }

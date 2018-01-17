@@ -6,6 +6,7 @@
 .biopic{
   height: 30vh;
   padding-bottom: 1vh;
+  max-width: 100%;
 }
 .loBioSection{
   display: flex;
