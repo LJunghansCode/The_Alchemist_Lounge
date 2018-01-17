@@ -23,7 +23,7 @@ body {
 }
 p{
   font-family: BodyMain;
-  font-size: 4vw;
+  font-size: 3.5vw;
 }
 ol, ul {
 	list-style: none;
@@ -66,6 +66,7 @@ section{
 .aside { flex: 1 auto;
          margin: auto;}
 @media all and (min-width: 600px) {
+
   .aside { flex: 2 0px; }
 }
 
@@ -85,3 +86,8 @@ section{
 }
 
 
+@media all and (min-width: 850px) {
+  p{
+    font-size: 2vw;
+  }
+}

@@ -1,7 +1,7 @@
 .aboutUsVideo{
   margin: auto;
   font-family: Header;
-  font-size: 6vw;
+  font-size: 5vh;
   z-index: 900;
   text-align: center;
 }
@@ -15,7 +15,6 @@
   text-align: center;
   width: 50vw;
   z-index: 900;
-  padding-top: 50%; 
 }
 
 .aboutUs{
@@ -118,6 +117,9 @@
 
 }
 @media all and (max-width: 850px) {
+   .aboutUsText{
+     padding-top: 50%; 
+   }
     .aboutUs{
      background-image: url('./../assets/fire.png');
      background-size: 50%;
