@@ -5,6 +5,7 @@
 }
 .biopic{
   height: 30vh;
+  z-index: 900;
   padding-bottom: 1vh;
   max-width: 100%;
 }
@@ -29,6 +30,34 @@
     width: 100%;
     flex-flow: row;
   }
+  .biomodule{
+    width: 40vw;
+    height: 40vh;
+    z-index: 950;
+    background-image: url('../assets/fire.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*background: grey;*/
+    visibility: hidden;
+    position: absolute;
+    opacity: .6;
+    margin: 27vh auto;
+  }
+  .biomodule2{
+    width: 51vw;
+    height: 80vh;
+    z-index: 300;
+    background: rgba(98, 155, 123, 1);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*background: grey;*/
+    visibility: hidden;
+    position: absolute;
+    opacity: .8;
+    margin: 10vh auto;
+  }
   .sethBioSection > img {
       order: 2;
       margin-top: 5vh;
@@ -48,10 +77,33 @@
     width: 65%;
   }
 }
-@media all and (min-width: 630px) {
-  /*.loBioSection > img {
-      order: 2
-  }*/
+@media all and (max-width: 850px) {
+  .biomodule{
+    width: 67vw;
+    height: 30vh;
+    z-index: 950;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background: rgb(67,67,65);
+    visibility: visible;
+    position: absolute;
+    opacity: .2;
+    margin: -12vh -2vh;
+  }
+  .biomodule2{
+    width: 60vw;
+    height: 30vh;
+    z-index: 950;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background: rgb(67,67,65);
+    visibility: visible;
+    position: absolute;
+    opacity: .2;
+    margin: 50vh 25vh;
+  }
 }
 .biotext{
   /*width: 50%;*/
@@ -78,34 +130,7 @@
 @keyframes leave-bio-three {
   to { transform: translateX(-0vw)}
 }
-.biomodule{
-  width: 40vw;
-  height: 40vh;
-  z-index: 950;
-  background-image: url('../assets/fire.png');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  /*background: grey;*/
-  visibility: hidden;
-  position: absolute;
-  opacity: .6;
-  margin: 27vh auto;
-}
-.biomodule2{
-  width: 51vw;
-  height: 80vh;
-  z-index: 300;
-  background: rgba(98, 155, 123, 1);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  /*background: grey;*/
-  visibility: hidden;
-  position: absolute;
-  opacity: .8;
-  margin: 10vh auto;
-}
+
 .biomodule3{
   width: 81vw;
   height: 40vh;

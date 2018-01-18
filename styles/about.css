@@ -120,6 +120,19 @@
    .aboutUsText{
      padding-top: 50%; 
    }
+   .aboutmodule{
+      width: 50vw;
+      height: 30vh;
+      z-index: 400;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background: rgba(98, 155, 123, 1);
+      position: absolute;
+      visibility: visible;
+      opacity: .6;
+      margin: 4vh auto;
+    }
     .aboutUs{
      background-image: url('./../assets/fire.png');
      background-size: 50%;
